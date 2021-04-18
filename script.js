@@ -23,13 +23,10 @@ function addEventAfterClick() {
 }
 
 function addEventAfterKeypress(event) {
-    if ( userInputValue() && event.key === 13 ) {
+    if ( userInputValue() !== '' &&  event.which ===13 ) {
         createListElement();
     }
 }
-
-//////////////////
-
 btnEnter.addEventListener('click', addEventAfterClick)
 userInput.addEventListener('keypress', addEventAfterKeypress)
 
