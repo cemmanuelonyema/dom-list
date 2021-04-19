@@ -29,33 +29,3 @@ function addEventAfterKeypress(event) {
 }
 btnEnter.addEventListener('click', addEventAfterClick)
 userInput.addEventListener('keypress', addEventAfterKeypress)
-
-
-
-
-
-/* The loger method without using functions
-
-btnEnter.addEventListener('click', function(){
-    if (userInput.value !== '' ) {
-        const li = document.createElement('li');
-        const ul = document.querySelector('ul');
-
-        li.appendChild(document.createTextNode(userInput.value));
-        ul.appendChild(li);
-        userInput.value = '';
-    }
-})
-
-userInput.addEventListener('keypress', function(event){
-    if (event.key === 13 ) {
-        const li = document.createElement('li');
-        const ul = document.querySelector('ul');
-
-        li.appendChild(document.createTextNode(userInput.value));
-        ul.appendChild(li);
-        userInput.value = '';
-    }
-})
-
-*/
